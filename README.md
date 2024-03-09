@@ -1,7 +1,5 @@
 # RetailAnalytics using Azure 
 
-# ETL Pipeline from On-prem MySQL to Azure Synapse Analytics
-
 ## Overview
 
 This repository contains Python scripts, Jupyter Notebooks, Azure Data Factory pipelines, and Power BI reports to facilitate the extraction, transformation, and loading (ETL) process from an On-prem MySQL database to Azure Synapse Analytics. The ETL pipeline involves data extraction using Python and Jupyter Notebooks, transformation of the data, loading it into Azure Blob Storage, and subsequent ingestion into Azure Synapse Analytics using Azure Data Factory.
