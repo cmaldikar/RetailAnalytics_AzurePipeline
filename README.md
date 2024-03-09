@@ -81,10 +81,10 @@ The Azure Data Factory pipeline (`data_factory_pipeline.json`) orchestrates the 
 
 The Power BI reports include:
 
-- Blue Retail Power BI Report:
+- PRODUCT REPORT:
   ![Blue Retail Power BI Report](POWER%20BI/blue-retails.png)
 
-- Red Retail Power BI Report:
+- MARKET REPORT:
   ![Red Retail Power BI Report](POWER%20BI/red-retail.png)
 
 ## Usage
