@@ -79,19 +79,22 @@ The Azure Data Factory pipeline (`data_factory_pipeline.json`) orchestrates the 
 
 ### Power BI Reports
 
-The Power BI report (`power_bi_report.pbix`) connects to Azure Synapse Analytics to visualize and analyze the loaded data.
+The Power BI reports include:
+
+- Blue Retail Power BI Report:
+  ![Blue Retail Power BI Report](POWER%20BI/blue-retails.png)
+
+- Red Retail Power BI Report:
+  ![Red Retail Power BI Report](POWER%20BI/red-retail.png)
 
 ## Usage
 
 1. Execute `mysql_to_blob.py` to extract data from On-prem MySQL and store it in Azure Blob Storage.
 2. Run the Jupyter Notebooks for extraction and transformation in the specified order.
 3. Trigger the Azure Data Factory pipeline to ingest data into Azure Synapse Analytics.
-4. Open the Power BI report (`power_bi_report.pbix`) to visualize the data.
+4. Open the Power BI reports to visualize and analyze the loaded data.
 
 ## Contributing
 
 Feel free to contribute by opening issues or creating pull requests. Your contributions are welcome!
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
