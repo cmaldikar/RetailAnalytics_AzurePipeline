@@ -1,4 +1,4 @@
-# RetailAnalytics using Azure 
+# Retail Analytics using Azure 
 
 ## Overview
 
@@ -6,7 +6,7 @@ This repository contains Python scripts, Jupyter Notebooks, Azure Data Factory p
 
 ## Architecture
 
-![Retail Data Engineering Pipeline Architecture](Retail-Data-Engineering-Pipeline-Architecture.png)
+![Retail Data Engineering Pipeline Architecture](Retail-Data%20Engineering%20Pipeline%20Architecture.png)
 
 ## Table of Contents
 
@@ -32,7 +32,7 @@ Ensure that you have the following components set up before running the ETL pipe
 
 ## ETL Process
 
-### Python Script
+### Python Script (mysql_to_blob.py)
 
 1. **Database Connection Setup:**
    - Reads database credentials from `config.ini`.
@@ -92,3 +92,6 @@ The Power BI report (`power_bi_report.pbix`) connects to Azure Synapse Analytics
 
 Feel free to contribute by opening issues or creating pull requests. Your contributions are welcome!
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
