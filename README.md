@@ -1,17 +1,21 @@
 # RetailAnalytics using Azure 
-Certainly! Below is a template for a README.md file summarizing the process you described:
+
+# ETL Pipeline from On-prem MySQL to Azure Synapse Analytics
 
 ## Overview
 
-This repository contains Python scripts, Azure Data Factory pipelines, and Power BI reports to facilitate the extraction, transformation, and loading (ETL) process from an On-prem MySQL database to Azure Synapse Analytics. The ETL pipeline involves data extraction using Python, transformation of the data, loading it into Azure Blob Storage, and subsequent ingestion into Azure Synapse Analytics using Azure Data Factory.
+This repository contains Python scripts, Jupyter Notebooks, Azure Data Factory pipelines, and Power BI reports to facilitate the extraction, transformation, and loading (ETL) process from an On-prem MySQL database to Azure Synapse Analytics. The ETL pipeline involves data extraction using Python and Jupyter Notebooks, transformation of the data, loading it into Azure Blob Storage, and subsequent ingestion into Azure Synapse Analytics using Azure Data Factory.
 
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
 - [Folder Structure](#folder-structure)
 - [ETL Process](#etl-process)
-- [Azure Data Factory Pipeline](#azure-data-factory-pipeline)
-- [Power BI Reports](#power-bi-reports)
+  - [Python Script (mysql_to_blob.py)](#python-script-mysql_to_blobpy)
+  - [Jupyter Notebook (Extraction-Part1.ipynb)](#jupyter-notebook-extraction-part1ipynb)
+  - [Jupyter Notebook (Transformation (1).ipynb)](#jupyter-notebook-transformation-1ipynb)
+  - [Azure Data Factory Pipeline](#azure-data-factory-pipeline)
+  - [Power BI Reports](#power-bi-reports)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -24,22 +28,9 @@ Ensure that you have the following components set up before running the ETL pipe
 - Azure account with Blob Storage and Synapse Analytics resources provisioned.
 - Access to the On-prem MySQL database.
 
-## Folder Structure
-
-```
-ETL-Project/
-|-- src/
-|   |-- mysql_to_blob.py
-|   |-- azure_data_factory/
-|       |-- data_factory_pipeline.json
-|-- reports/
-|   |-- power_bi_report.pbix
-|-- README.md
-```
-
 ## ETL Process
 
-### Python Script (mysql_to_blob.py)
+### Python Script
 
 1. **Database Connection Setup:**
    - Reads database credentials from `config.ini`.
@@ -68,6 +59,18 @@ ETL-Project/
 8. **Summary Output:**
    - Prints a success or error message based on the execution.
 
+### Jupyter Notebook (Extraction-Part1.ipynb)
+
+The Jupyter Notebook (`Extraction-Part1.ipynb`) contains the extraction logic for retrieving data from the On-prem MySQL database. It includes interactive code cells and explanations for each step of the extraction process.
+
+Make sure to run the notebook in a Jupyter environment with the required dependencies installed.
+
+### Jupyter Notebook (Transformation (1).ipynb)
+
+The Jupyter Notebook (`Transformation (1).ipynb`) contains the transformation logic for processing and modifying the extracted data. It includes interactive code cells and explanations for each step of the transformation process.
+
+Make sure to run the notebook in a Jupyter environment with the required dependencies installed.
+
 ### Azure Data Factory Pipeline
 
 The Azure Data Factory pipeline (`data_factory_pipeline.json`) orchestrates the process of copying data from Azure Blob Storage to Azure Synapse Analytics.
@@ -79,9 +82,11 @@ The Power BI report (`power_bi_report.pbix`) connects to Azure Synapse Analytics
 ## Usage
 
 1. Execute `mysql_to_blob.py` to extract data from On-prem MySQL and store it in Azure Blob Storage.
-2. Trigger the Azure Data Factory pipeline to ingest data into Azure Synapse Analytics.
-3. Open the Power BI report (`power_bi_report.pbix`) to visualize the data.
+2. Run the Jupyter Notebooks for extraction and transformation in the specified order.
+3. Trigger the Azure Data Factory pipeline to ingest data into Azure Synapse Analytics.
+4. Open the Power BI report (`power_bi_report.pbix`) to visualize the data.
 
 ## Contributing
 
 Feel free to contribute by opening issues or creating pull requests. Your contributions are welcome!
+
